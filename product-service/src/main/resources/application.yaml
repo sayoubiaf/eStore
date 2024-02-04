@@ -14,9 +14,8 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   application:
     name: PRODUCT-SERVICE
-  cloud:
-    config: 
-      uri: optional:http://localhost:8888
+  config:
+    import: optional:configserver:http://localhost:8888
 
 # eureka:
 #     instance:

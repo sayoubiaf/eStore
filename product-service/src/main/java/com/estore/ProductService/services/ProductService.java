@@ -12,5 +12,6 @@ public interface ProductService {
     List<Product> getAllProdut();
     String deleteProduct(String id);
     ProductDto updateProduct(ProductDto product, String id);
+    void reduceQuantity(String id, long quantity);
 
 }
